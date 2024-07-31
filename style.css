@@ -1,0 +1,189 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+.topBar {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.topBar a {
+  color: #186ff0;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #ddd;
+}
+
+header .logo img {
+  max-height: 50px;
+}
+
+header nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #333;
+}
+
+header .butn {
+  display: flex;
+  align-items: center;
+}
+
+header .butn p {
+  margin: 0 10px;
+}
+
+header .login,
+header .signup {
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+}
+
+header .login {
+  background-color: #333;
+  color: white;
+}
+
+header .signup {
+  background-color: #186ff0;
+  color: black;
+}
+
+.thirdbar {
+  background-color: #f8f8f8;
+  border-top: 1px solid #ddd;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.side {
+  flex: 1;
+}
+
+.leftside {
+  margin-right: 10px;
+  background-color: #186ff0;
+  color: #fff;
+  padding: 20px;
+}
+
+.rightside {
+  margin-left: 10px;
+  background-color: #186ff0;
+  color: #fff;
+  padding: 20px;
+
+}
+
+.middle {
+  flex: 4;
+}
+
+.middle .heading {
+  color: #333;
+  margin-top: 0;
+}
+
+.middle .para {
+  margin-bottom: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-top: 1px solid #ddd;
+}
+
+.dropDown {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.btn i {
+  margin-right: 5px;
+}
+
+@media screen and (max-width: 1024px) {
+  .leftside,
+  .rightside {
+    flex: 0.5;
+  }
+
+  .middle {
+    flex: 2;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  header nav {
+    margin-top: 10px;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+
+  .side {
+    margin-bottom: 20px;
+  }
+
+  .thirdbar {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header nav a {
+    display: block;
+    margin: 5px 0;
+  }
+
+  header .butn {
+    flex-direction: column;
+  }
+
+  .thirdbar p {
+    margin: 5px 0;
+  }
+}
